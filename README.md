@@ -44,7 +44,7 @@ After 50 epochs, the model achieved:
 - Class distribution visualized with a bar chart
 - Sample images shown per emotion label to confirm correctness
 
----
+
 
 ## Problem Formulation
 
