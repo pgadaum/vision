@@ -43,7 +43,8 @@ After 50 epochs, the model achieved:
 
 - Class distribution visualized with a bar chart
 - Sample images shown per emotion label to confirm correctness
-
+<img width="1071" height="441" alt="Screenshot 2025-07-18 at 6 23 05 PM" src="https://github.com/user-attachments/assets/8db05605-10c3-44e5-b793-106813b26b0a" />
+<img width="1216" height="442" alt="Screenshot 2025-07-18 at 6 23 26 PM" src="https://github.com/user-attachments/assets/621f09c2-3709-4b44-9801-1cc958963def" />
 
 
 ## Problem Formulation
