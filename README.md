@@ -139,7 +139,7 @@ pip install -q kagglehub opencv-python tensorflow matplotlib seaborn
 
 ---
 
-## 📦 Data Access
+## Data Access
 
 - Dataset: [FER-2013 on Kaggle](https://www.kaggle.com/datasets/msambare/fer2013)
 - Download via:
