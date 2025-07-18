@@ -1,11 +1,12 @@
+![](UTA-DataScience-Logo.png)
 
 # Facial Emotion Recognition with CNNs
 
-📌 This repository contains a deep learning pipeline for classifying facial emotions using the FER-2013 dataset from [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013).
+This repository contains a deep learning pipeline for classifying facial emotions using the FER-2013 dataset from [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013).
 
 ---
 
-## 🧠 Overview
+## Overview
 
 **Task Definition**:  
 The objective is to classify grayscale face images (48x48 pixels) into one of 7 emotion categories: `angry`, `disgust`, `fear`, `happy`, `sad`, `surprise`, and `neutral`, as defined in the FER-2013 challenge.
@@ -20,9 +21,9 @@ After 50 epochs, the model achieved:
 
 ---
 
-## 📊 Summary of Work
+## Summary of Work
 
-### 📁 Data
+### Data
 
 - **Source**: [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013)
 - **Type**: 48x48 grayscale facial images
@@ -31,26 +32,26 @@ After 50 epochs, the model achieved:
   - Train: 28,709
   - Test: 7,178
 
-### 🔄 Preprocessing
+### Preprocessing
 
 - Images resized to 48x48 if necessary
 - Normalized to pixel values in `[0, 1]`
 - Labels encoded as integers
 - Augmented training images using horizontal flips and slight rotations
 
-### 📊 Data Visualization
+### Data Visualization
 
 - Class distribution visualized with a bar chart
 - Sample images shown per emotion label to confirm correctness
 
 ---
 
-## 🧮 Problem Formulation
+## Problem Formulation
 
 - **Input**: Grayscale image (48x48)
 - **Output**: Emotion class (0–6)
 
-### 🧠 Model
+### Model
 
 - Model: CNN with Conv2D, MaxPooling, BatchNorm, Dropout, and Dense layers
 - Loss: `categorical_crossentropy`
@@ -59,7 +60,7 @@ After 50 epochs, the model achieved:
 
 ---
 
-## 🏋️ Training
+## Training
 
 - Environment: Google Colab
 - Runtime: T4 GPU (~14s/epoch)
@@ -67,29 +68,29 @@ After 50 epochs, the model achieved:
 - Training Time: ~12–15 minutes
 - Model saved using `ModelCheckpoint`
 
-### 🔄 Training Curves
+### Training Curves
 
 - Training/Validation loss and accuracy plotted
 - Validation accuracy peaked ~57.5%
 
-### 🧱 Early Stopping
+### Early Stopping
 
 - Used patience of 5 epochs to avoid overfitting
 
 ---
 
-## 📈 Performance Summary
+## Performance Summary
 
 | Metric       | Train Set | Validation Set |
 |--------------|-----------|----------------|
 | Accuracy     | 52.1%     | 57.5%           |
 | Loss         | 1.2101    | 1.1343          |
 
-🧩 Classes: angry, disgust, fear, happy, neutral, sad, surprise
+Classes: angry, disgust, fear, happy, neutral, sad, surprise
 
 ---
 
-## 🧾 Conclusions
+## Conclusions
 
 - The CNN model effectively learns from raw FER-2013 data
 - Validation performance outperformed training, indicating generalization
@@ -97,7 +98,7 @@ After 50 epochs, the model achieved:
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - Apply more advanced architectures (ResNet, MobileNet)
 - Use pre-trained models with fine-tuning
@@ -107,18 +108,17 @@ After 50 epochs, the model achieved:
 
 ---
 
-## 🧪 Reproducibility
+## Reproducibility
 
 To reproduce:
 
-1. Run on **Google Colab** using GPU (T4 or better)
-2. Install `kagglehub` and download dataset
-3. Execute all cells in `image2.ipynb` sequentially
-4. Training will auto-start and save best model to disk
+1. Install `kagglehub` and download dataset
+2. Execute all cells in `image2.ipynb` sequentially
+3. Training will auto-start and save best model to disk
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -131,7 +131,7 @@ To reproduce:
 
 ---
 
-## 🛠️ Software Setup
+## Software Setup
 
 ```bash
 pip install -q kagglehub opencv-python tensorflow matplotlib seaborn
@@ -151,7 +151,7 @@ path = kagglehub.dataset_download("msambare/fer2013")
 
 ---
 
-## 🧠 Training & Evaluation
+## Training & Evaluation
 
 Run `image2.ipynb` top to bottom:
 - Model is trained for 50 epochs
@@ -160,8 +160,8 @@ Run `image2.ipynb` top to bottom:
 
 ---
 
-## 📌 Credits
+## Credits
 
 Dataset: Kaggle contributor `msambare`  
 Model: CNN designed in Keras/TensorFlow  
-Notebook by: *[Your Name]*
+Notebook by: *Pawan Gadaum*
