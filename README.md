@@ -7,7 +7,7 @@ This repository contains a deep learning pipeline for classifying facial emotion
 ---
 <img width="1800" height="379" alt="image" src="https://github.com/user-attachments/assets/53a40870-c27b-42dd-ad3e-7d96ef7e2c51" />
 
-
+---
 **Objective**: 
 The objective is to classify grayscale face images (48x48 pixels) into one of 7 emotion categories: `angry`, `disgust`, `fear`, `happy`, `sad`, `surprise`, and `neutral`, as defined in the FER-2013 challenge.
 
